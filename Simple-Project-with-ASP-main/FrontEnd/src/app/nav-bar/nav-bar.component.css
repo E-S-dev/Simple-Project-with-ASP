@@ -1,0 +1,13 @@
+nav{
+  font-size: 11px;
+}
+
+.nav-search{
+  display: flex;
+  flex-direction: row;
+  margin-left: 600px;
+}
+
+li{
+  margin: auto;
+}

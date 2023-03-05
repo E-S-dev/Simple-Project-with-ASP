@@ -1,0 +1,14 @@
+<p>propert-details works!
+This is the property {{PropertyId}}
+<br/> <br/>
+<button class="btn btn-dark" (click)="onSelectPrev()">Select Previous House</button>
+<button class="btn btn-dark" (click)="onSelectNext()">Select Next House</button>
+
+<br/> <br/>
+<button class="btn btn-dark" routerLink="/property-details/1">1</button>
+<button class="btn btn-dark" routerLink="/property-details/2">2</button>
+<button class="btn btn-dark" routerLink="/property-details/3">3</button>
+<!-- Another way to write 'routerLink' -->
+<button class="btn btn-dark" [routerLink]="['/property-details','4']">4</button>
+
+</p>

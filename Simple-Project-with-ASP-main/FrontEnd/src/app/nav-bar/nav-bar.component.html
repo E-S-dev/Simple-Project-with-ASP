@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 fixed-top">
+  <a class="navbar-brand" href="/">HPSA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- We use 'routerLink' instead of 'href' in angular for avoid the 'refresh', to be a Single Page App -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-itemx">
+        <!-- routerLinkActive="name of css class" -->
+        <!-- routerLinkActiveOptions: mean the Active Style will enable just when it is the exactly url -->
+        <a class="nav-link" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/x">Buy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/rent-house">Rent</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/add-property">List Property (Free)</a>
+      </li>
+    </ul>
+    <form class="form-inline nav-search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 m-2" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

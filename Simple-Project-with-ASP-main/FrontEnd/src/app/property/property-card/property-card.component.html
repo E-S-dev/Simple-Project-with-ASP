@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="img-wrapper ">
+  <img *ngIf="property.Image" class="card-img-top" src="assets/img/{{property.Image}}.jpg" alt="" />
+  <img *ngIf="!property.Image" class="card-img-top" src="assets/img/house.jpg" alt="" />
+
+  <ul class="list-inline text-center member-icon animate">
+    <li class="list-inline-item"><button class="btn btn-dark" routerLink="/property-details/{{property.Id}}"><i class="far fa-edit"></i></button></li>
+    <li class="list-inline-item"><button class="btn btn-dark"><i class="far fa-address-book"></i></button></li>
+  </ul>
+</div>
+
+  <div class="card-body p-2">
+    <!-- use the property array from property-card.component.ts -->
+    <h2>{{ property.Name }}</h2>
+    <h3>{{ property.Type }}</h3>
+    <h4>{{ property.Price }}</h4>
+  </div>
+</div>

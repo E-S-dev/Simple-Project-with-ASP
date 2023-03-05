@@ -1,0 +1,6 @@
+{
+  "problem1": "ng : File C:\Users\Ebaa S Alrass\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is
+  disabled on this system. For more information, see about_Execution_Policies at
+  https:/go.microsoft.com/fwlink/?LinkID=135170.",
+  "solve": "this command: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted"
+}
